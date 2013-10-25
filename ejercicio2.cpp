@@ -116,8 +116,8 @@ int main()
 
 
     for (int i=0; i<N * N ; i++){
-        a_data[i] = 1.0;
-        b_data[i] = 1.0;
+        a_data[i] = (float)(rand()*10.0/RAND_MAX);
+        b_data[i] = (float)(rand()*10.0/RAND_MAX);
     }
 
     cl_mem a_in, b_in, c_out;
